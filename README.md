@@ -40,6 +40,18 @@ This project automates the lead qualification process through a Flask REST API a
 5. The API returns the lead details and qualification result.
 6. n8n checks the lead priority and routes the appropriate email notification.
 7. A Python test script helps verify the webhook integration.
+## Workflow Architecture
+
+The following diagram shows how the lead qualification system connects n8n, the Flask REST API, MySQL, and automated email notifications.
+
+![AI Lead Qualification Automation Workflow](screenshots/lead-automation-workflow.png)
+
+**Workflow overview:**
+1. Receive lead data through an n8n webhook.
+2. Send the lead to the Flask API for qualification.
+3. Save lead information in MySQL.
+4. Route the lead according to its priority.
+5. Send the appropriate email notification.
 
 ## Project Structure
 
